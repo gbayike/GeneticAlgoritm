@@ -23,7 +23,7 @@ public abstract class Chromosome<T extends Chromosome<T>> implements Comparable<
     @Override
     public int compareTo(T other){
         Double mine = this.fitness();
-        double theirs = other.fitness();
+        Double theirs = other.fitness();
         return mine.compareTo(theirs);
-    };    
+    } 
 }
